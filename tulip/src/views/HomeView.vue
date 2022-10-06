@@ -17,6 +17,8 @@ import Process from '../components/Process.vue';
 import Products from '../components/Products.vue';
 import Contact from '../components/Contact.vue';
 import Footer from '../components/Footer.vue';
+import Carousel from '../components/Carousel.vue'
+import Navbar from '@/components/Navbar.vue';
 export default {
   name: 'HomeView',
   components: {
@@ -25,14 +27,15 @@ export default {
     Products,
     Footer,
     Process,
-    Contact
+    Contact,
+    Carousel,
+    Navbar
 }
 }
 </script>
 <style>
 .home{
-  height: 100vh;
-  background: red;
+  /*min-height: 100vh;*/
   
 }
 </style>

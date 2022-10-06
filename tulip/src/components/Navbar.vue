@@ -15,9 +15,10 @@
                             <div v-if="show == true">           
 
           <router-link to="/"><li>Home</li></router-link>
+          <a @click="nav(process[0].id)"> <li>Who we are</li></a>
           <a @click="nav(process[0].id)"> <li>Our Process</li></a>
           <a @click="nav(products[0].id)"> <li>Products and Services</li></a>
-            <a  @click="nav(contact[0].id)"><li>Contact</li></a>
+            <a  @click="nav(contact[0].id)"><li>Contact us</li></a>
              </div>
                           </div>
 </div>
@@ -29,6 +30,7 @@
   <ul class="nav">
 
  
+    <a @click="nav(process[0].id)"> <li>Our Mission</li></a>
 
 
    <div class="dropdown">
@@ -51,7 +53,7 @@
   </div>
 </div>
 
-<li @click="nav(contact[0].id)">Contact</li>
+<li @click="nav(contact[0].id)">Contact us</li>
 
 </ul>
 </div>
@@ -120,15 +122,18 @@ document.addEventListener('scroll', function() {
 
 <style lang="scss">
 
+ 
+
 .header-phone{
   display: none;
 }
 
 .container{
-  position: fixed;
-  background: transparent;
+ // position: fixed;
+ background: transparent;
   width:100%;
        z-index: 999;
+       
 
 }
 .dropbtn{
@@ -137,7 +142,7 @@ document.addEventListener('scroll', function() {
 
     .arrow{
         color: white;
-        font-size: 22px;
+        font-size: 15px;
         margin-left: 10px;
       transform: rotate(0deg);
             transition: .4s ease-in-out;
@@ -157,6 +162,7 @@ document.addEventListener('scroll', function() {
   display: none;
   position: absolute;
   background-color: black;
+  border-radius: 15px;
   min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -177,7 +183,7 @@ document.addEventListener('scroll', function() {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: rgba(45, 36, 36, 0.207);  border-left: 7px solid rgb(149, 0, 203);
+.dropdown-content a:hover {background-color: rgba(45, 36, 36, 0.207);  border-left: 7px solid #00ade7;
 
 
 }
@@ -229,9 +235,9 @@ document.addEventListener('scroll', function() {
 
            li{
             list-style:none;           
-            padding: 5px 10px;
+            margin: 5px 10px;
             cursor: pointer;
-              font-weight: 600;
+              //font-weight: 600;
 
 
             &:hover{
@@ -284,14 +290,14 @@ text-decoration: none;
 }
 }
 
-@media (max-width:850px) {
+@media (max-width:1200px) {
 
   
 
   .container-icons-header{
     display: flex;
     justify-content: space-around;
-    padding: 15px;
+    padding: 5%;
   }
 
   .navbar{display: none;}
@@ -320,7 +326,8 @@ display: block;
   }
   
   .icon-mobile{
-    height: 30px;
+    height: 50px;
+    cursor: pointer;
   }
 }
 </style>

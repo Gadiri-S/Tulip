@@ -1,8 +1,9 @@
 <template>
-<div> 
-    <Navbar/>
+<div class="hero-container"> 
+  <Navbar/>
 
   <div class="header-t">
+    
 
 
 <div class="content">
@@ -16,7 +17,7 @@
   <button>Get to know us</button>
 </div>
 </div>
-<div class="kiosk"><img src="../assets/kiosk2.png" alt="" class="kiosk-picture"></div>
+<div class="kiosk"><!--<img src="../assets/kiosk2.png" alt="" class="kiosk-picture">--></div>
 
 
   </div>
@@ -34,27 +35,37 @@ export default {
 <style lang="scss" scoped>
 
 .kiosk{
-  width:40% ;
+  width:50% ;
+  height: 50vh;
+  background: url('../assets/kiosk2.png');
+background-size: contain;
+ background-repeat: no-repeat;
 
  .kiosk-picture{
   width:100%;
  }
 }
+
+.hero-container{
+  //background: rgb(3,0,215);
+//background: linear-gradient(270deg, rgba(3,0,215,1) 8%, rgba(99,0,167,1) 100%);
+background:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url('../assets/m.jpg') ;
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 .header-t{
   display: flex;
   align-items: center;
-background: linear-gradient(209deg, rgb(0, 125, 203) 24%, rgb(149, 0, 203) 87%);
-       
-    background-position:center;
-    background-size: cover;
-     background-repeat: no-repeat;
     min-height: 100vh;
     padding: 0;
     margin:0;
+
 }
 
 .content{
-    color:rgba(255, 255, 255, 0.819);;
+    color:rgb(255, 255, 255);;
     text-align: left;
     width: 50%;
     margin-left: 5%;
@@ -62,7 +73,7 @@ background: linear-gradient(209deg, rgb(0, 125, 203) 24%, rgb(149, 0, 203) 87%);
  .text{
 
     h3{
-        padding-top: 20%;
+        //padding-top: 10%;
         font-size: 50px;
          letter-spacing: 15px;
         margin-bottom: 20px;
@@ -82,21 +93,21 @@ background: linear-gradient(209deg, rgb(0, 125, 203) 24%, rgb(149, 0, 203) 87%);
     font-size: 23px;
     font-weight: 600;
     border-radius: 30px;
-    border:none;
+    border:1px solid white;
 font-family: 'Roboto', sans-serif;
-background: #0372d8;
+
+//background:  rgb(224, 230, 227);
+background:  transparent;
 color: white;
 transition: .4s;
 
 &:hover{
     cursor: pointer;
-    color:#0372d8;;
-    background: #ffffff;
+   // color:#0372d8;;
+   background: #0060e7;
     transition: .4s;
-   /* background: transparent;
-    color: white;
-    transition: .4s;
-    border: 1px solid #00278c;*/
+   border: 1px solid transparent;
+   
 }
     }
 }
@@ -105,11 +116,20 @@ transition: .4s;
 
 
 
-@media (max-width:1200px) {
-   .kiosk-picture{
-  width:400px;
+@media (max-width:1280px) {
+   .header-t{
+    display: flex;
+    flex-direction: column;
  }
-  
+ .content{
+    text-align: center;
+    width: auto;
+    margin: 10% 0 5% 0;
+
+}
+  .kiosk{
+    height: 500px;
+  }
 }
 
 @media (max-width:1000px) {
