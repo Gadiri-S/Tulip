@@ -75,7 +75,8 @@ padding:5% 0 ;
 }
 
 .product:nth-child(2n) {
-  border-radius:  40% 0  40% 0;
+border-radius: 15px;
+  //border-radius:  40% 0  40% 0;
 }
   .product{
   position: relative;
@@ -86,7 +87,7 @@ padding:5% 0 ;
         background-repeat: no-repeat;/**/
 
         margin: 15px;
-        border-radius:  0 40%  0 40%;
+        border-radius: 15px;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;   
          .product-img{
 height: 50vh;

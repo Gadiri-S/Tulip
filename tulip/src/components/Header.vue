@@ -49,10 +49,11 @@ background-size: contain;
 .hero-container{
   //background: rgb(3,0,215);
 //background: linear-gradient(270deg, rgba(3,0,215,1) 8%, rgba(99,0,167,1) 100%);
-background:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url('../assets/m.jpg') ;
-    background-position: auto;
+background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('../assets/bp.jpg') ;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    
 
 }
 .header-t{

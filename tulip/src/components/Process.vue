@@ -51,7 +51,10 @@
 
    </div>
    
+   <div class="phone">
+    <img src="../assets/arrowdown.png" class="arrow-up" alt="">       
 
+</div>
   </div>
 </template>
 
@@ -105,6 +108,25 @@ methods:{
 </script>
 
 <style lang="scss" scoped>
+
+.phone {
+    position: fixed;
+    text-align: right;
+    top: 85%;
+    left: 90%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.arrow-up{
+    height: 40px;
+    background: rgb(0, 113, 212);
+    rotate: 180deg;
+    border-radius: 50%;
+    padding: 15px;
+-webkit-box-shadow: 0px 5px 18px 1px rgba(0,0,0,0.4); 
+box-shadow: 0px 5px 18px 1px rgba(0,0,0,0.4);
+}
+
 
 .process-cont{
 

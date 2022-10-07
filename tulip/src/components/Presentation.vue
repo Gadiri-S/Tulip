@@ -24,6 +24,10 @@ name:'Presentation'
 </script>
 
 <style lang="scss">
+
+
+
+
 .presentation-container{
   display: flex;
   min-height: 100vh;
